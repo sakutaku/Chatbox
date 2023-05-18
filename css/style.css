@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+    background-size:cover;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+    from {background-position: top; background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+    from {background-position: top;background-size:3000px; }
+    to {background-position: -100px 0px;background-size:2750px;}
+
+}
+.container {
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(195 163 105 / 15%);
+    color: white;
+    border-radius: 3px;
+}
+.name-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns{
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(195 163 105 / 85%);
+    border-radius: 10px;
+}
+.btns:hover{
+    background-color: white;
+    color: rgba(195 163 105 / 85%);
+}
+.btn-edit {
+    padding: 16px;
+    background-image: url("../images/edit-btn.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+.btn-edit:hover,
+#btn-follow-user:hover{
+    background-color: transparent;
+}
+#btn-follow-user{
+    padding: 16px;
+    background-image: url("../images/follow-btn.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+.btn-submit{
+    margin-left: 95%;
+    padding: 5px;
+}
+.btn-modal{
+    color: #000;
+}
+.btn-modal:hover{
+    background-color: transparent;
+}
+#modal,
+#modal-2{
+    color: black;
+}
+#message-box{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.modal-content{
+    font-family: 'Source Code Pro', monospace;
+}
